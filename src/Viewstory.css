@@ -1,0 +1,162 @@
+.bbody {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;   /* IMPORTANT */
+  top: 0;
+  left: 0;
+}
+.instatext{
+    width: 150px;
+    padding: 6px;
+    position: absolute;
+}
+.grey-bg{
+    background : linear-gradient(360deg,rgb(231, 231, 231),rgb(78, 77, 77));
+    height: 95vh;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    position: relative;
+}
+.Vdn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    
+}
+.Vdb{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.Vusername{
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+}
+.Simg{
+    height: 95vh;
+    width: 380px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* center vertically */
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+/* Left side */
+.prev-btn {
+    left: 10px;
+}
+
+/* Right side */
+.next-btn {
+    right: 10px;
+}
+.progress-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: white;
+}
+
+@keyframes fill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+.closeStory {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    
+    text-decoration: none;   /* remove underline */
+    font-size: 20px;
+    font-weight: bold;
+    
+    padding: 6px 10px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 5;
+    cursor: pointer;
+}
+.closeStory:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.bottom-bar {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 5;
+}
+
+.reply-input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.reply-input::placeholder {
+    color: #ddd;
+}
+
+.right-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* 🔥 IMPORTANT FIX (scoped icon) */
+.bottom-bar .icon {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+/* optional hover */
+.bottom-bar .icon:hover {
+    transform: scale(1.2);
+}

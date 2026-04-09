@@ -1,0 +1,36 @@
+body{
+    border-right: 1px solid black;
+}
+.navvv{
+    position: fixed;
+}
+.items{
+    padding: 20px;
+    padding-top: 20px;
+}
+.textlogo{
+    width: 180px;
+}
+.items div{
+    padding: 10px;
+    
+}
+.belowitems{
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.belowitems div{
+    padding: 10px;
+    margin-left: 20px;
+}
+.items div:hover{
+    cursor: pointer;
+    background-color: rgb(203, 203, 203);
+}
+.belowitems div:hover{
+    cursor: pointer;
+    background-color: rgb(203, 203, 203)
+}
+.fa-solid, .fa-regular, .fa-brands {
+    margin-right: 10px;
+}

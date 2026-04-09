@@ -1,0 +1,35 @@
+.entirepost{
+    margin-left: 25%;
+}
+.pronam{
+    display: flex;
+}
+.dpp{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+h3{
+    padding: 30px 12px;
+    margin-top: 20px;
+}
+.postername{
+    font-weight: 600;
+}
+.postimg{
+    padding: 10px 0px;
+    height: 450px;
+    width: 400px;
+    border-radius: 5%;
+}
+.desc{
+    padding-left: 5px;
+}
+.icon{
+    font-size: 24px;
+    padding-left:10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
